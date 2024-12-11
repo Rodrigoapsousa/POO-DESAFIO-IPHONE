@@ -1,18 +1,87 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Desafio DIO-POO_iphone
+Reprodutor Musical
+Métodos: tocar(), pausar(), selecionarMusica(String musica)
+Aparelho Telefônico
+Métodos: ligar(String numero), atender(), iniciarCorreioVoz()
+Navegador na Internet
+Métodos: exibirPagina(String url), adicionarNovaAba(), atualizarPagina()
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+Java
+public class iPhone extends ReprodutorMusical {
+    private AparelhoTelefonico aparelhoTelefonico = new AparelhoTelefonico();
+    private NavegadorInternet navegadorInternet = new NavegadorInternet();
 
-- `src`: the folder to maintain sources
+    // Reprodutor Musical (herdado da classe ReprodutorMusical)
+    public void tocar() {
+        super.tocar();
+    }
+
+    public void pausar() {
+        super.pausar();
+    }
+
+    public void selecionarMusica(String musica) {
+        super.selecionarMusica(musica);
+    }
+
+    // Aparelho Telefônico
+    public void ligar(String numero) {
+        aparelhoTelefonico.ligar(numero);
+    }
+
+    public void atender() {
+        aparelhoTelefonico.atender();
+    }
+
+    public void iniciarCorreioVoz() {
+        aparelhoTelefonico.iniciarCorreioVoz();
+    }
+
+    // Navegador Internet
+    public void exibirPagina(String url) {
+        navegadorInternet.exibirPagina(url);
+    }
+
+    public void adicionarNovaAba() {
+        navegadorInternet.adicionarNovaAba();
+    }
+
+    public void atualizarPagina() {
+        navegadorInternet.atualizarPagina();
+    }
+}
+
+- `src`: C:\estudos dio\POO-DESAFIO-IPHONE\src
 - `lib`: the folder to maintain dependencies
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+## Diagrama UML 
+classDiagram
+    class ReprodutorMusical {
+        +exemploMetodo1()
+        +exemploMetodo2(String exemplo)
+    }
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    class AparelhoTelefonico {
+        +exemploMetodo1()
+        +exemploMetodo2(String exemplo)
+    }
+
+    class NavegadorInternet {
+        +exemploMetodo1()
+        +exemploMetodo2(String exemplo)
+    }
+
+    class iPhone {
+    }
+
+    iPhone --> ReprodutorMusical
+    iPhone --> AparelhoTelefonico
+    iPhone --> NavegadorInternet
+
+
