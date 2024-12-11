@@ -75,9 +75,6 @@ classDiagram
     class NavegadorInternet {
         +exemploMetodo1()
         +exemploMetodo2(String exemplo)
-    }![Untitled diagram-2024-12-11-233145](https://github.com/user-attachments/assets/09a50a07-df8d-4f41-8aed-45625d9e8693)
-![Untitled diagram-2024-12-11-233145](https://github.com/user-attachments/assets/a0b0368f-05e0-4216-aef4-d40f2f95d2da)
-
 
     class iPhone {
     }
@@ -86,4 +83,8 @@ classDiagram
     iPhone --> AparelhoTelefonico
     iPhone --> NavegadorInternet
 
+    }![Untitled diagram-2024-12-11-233145](https://github.com/user-attachments/assets/09a50a07-df8d-4f41-8aed-45625d9e8693)
+![Untitled diagram-2024-12-11-233145](https://github.com/user-attachments/assets/a0b0368f-05e0-4216-aef4-d40f2f95d2da)
 
+
+  
